@@ -4,4 +4,4 @@
 - React
 - TailwindCss
 
-![Imagen de nuestra]("src/assets/mock.png")
+![Imagen de nuestra](src/assets/mock.png)
