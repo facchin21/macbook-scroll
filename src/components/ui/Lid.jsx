@@ -1,6 +1,7 @@
-import imageBackground from '../../assets/background.jpg'
+import { Hero } from '../me/hero';
 import { AceternityLogo } from './AceternityLogo'
 import { motion } from "framer-motion";
+import imageBackground from '../../assets/background.jpg'
 
 export const Lid = ({
     scaleX,
@@ -37,11 +38,11 @@ export const Lid = ({
                     transformOrigin: "top",
                 }}
                 className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2">
-                <div className="absolute inset-0 bg-[#272729] rounded-lg" />
-                <img
-                    src={imageBackground}
-                    alt="aceternity logo"
-                    className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full" />
+                <div className="absolute inset-0 rounded-lg" />
+                {/* <Hero /> */}
+                <img src={imageBackground} alt="Imagen de fondo"
+                className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
+                />
             </motion.div>
         </div>)
     );

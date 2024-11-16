@@ -4,6 +4,7 @@ import { SpeakerGrid } from "./SpeakerGrid";
 import { Trackpad } from "./Trackpad";
 import { Keypad } from "./Keypad";
 import { Lid } from "./Lid";
+import { useText } from "../../hooks/useText";
 
 export const MacbookScroll = ({
     src,
@@ -18,6 +19,7 @@ export const MacbookScroll = ({
     });
 
     const [isMobile, setIsMobile] = useState(false);
+    const { displayedText: displayTitle } = useText(title);
 
     useEffect(() => {
         if (window && window.innerWidth < 768) {
@@ -41,8 +43,8 @@ export const MacbookScroll = ({
                     translateY: textTransform,
                     opacity: textOpacity,
                 }}
-                className="text-white text-3xl font-bold mb-20 text-center">
-                {title || (
+                className="text-white text-5xl font-bold mb-28 text-center">
+                {displayTitle || (
                     <span>
                         This Macbook is built with Tailwindcss. <br /> No kidding.
                     </span>
