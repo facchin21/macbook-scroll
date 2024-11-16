@@ -1,4 +1,4 @@
-# Efect Macbook Scroll
+# Effect Macbook Scroll
 
 ## Tecnologias:
 - React
